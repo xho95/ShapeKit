@@ -1,3 +1,7 @@
 struct ShapeKit {
-    var text = "Hello, World!"
+    private var text = "Hello, World!"
+    
+    public func greeting() {
+        print(text)
+    }
 }
