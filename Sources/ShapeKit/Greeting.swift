@@ -1,5 +1,9 @@
 public struct Greeting {
-    public var text = "The beginning!"
+    var text: String
+    
+    public init(text: String = "The beginning!") {
+        self.text = text
+    }
     
     public func greeting() {
         print(text)
