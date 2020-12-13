@@ -6,7 +6,7 @@ final class ShapeKitTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(ShapeKit().text, "Hello, World!")
+        XCTAssertEqual(Greeting().text, "Hello, World!")
     }
 
     static var allTests = [
