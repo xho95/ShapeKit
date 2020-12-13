@@ -1,3 +1,3 @@
 # ShapeKit
 
-A description of this package.
+A package that adds some additional shapes and funtionalities on the Shape
