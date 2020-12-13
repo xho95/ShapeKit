@@ -5,7 +5,7 @@ public struct Greeting {
         self.text = text
     }
     
-    public func greeting() {
-        print(text)
+    public var greeting: String {
+        text
     }
 }
