@@ -1,7 +1,7 @@
-struct Greeting {
+public struct Greeting {
     var text = "The beginning!"
     
-    func greeting() {
+    public func greeting() {
         print(text)
     }
 }
