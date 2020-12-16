@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-protocol Pattern: View {
+public protocol Pattern: View {
+    @available(iOS 13.0, *)
     var configs: [PatternConfig] { get set }
 }
 
-struct PatternConfig: Identifiable {
+@available(iOS 13.0, *)
+public struct PatternConfig: Identifiable {
     var color = Color.clear
     var width = CGFloat.zero
     var spacing = CGFloat.zero
-    var id = UUID()
+    public var id = UUID()
 }
 
