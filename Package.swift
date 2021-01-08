@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ShapeKit",
-            targets: ["ShapeKit"]),
+            targets: ["ShapeKit", "CoreShape"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -29,8 +29,10 @@ let package = Package(
             name: "CoreShape",
             url: "https://github.com/xho95/CoreShape/releases/download/0.0.1/CoreShape-0.0.1.xcframework.zip",
             checksum: "47e86e3bd5edec935b5bb634ef4ff22f7dcb27259b05f6a88bf5aab6ceadc6c7"),
+        /*
         .testTarget(
             name: "ShapeKitTests",
             dependencies: ["ShapeKit"]),
+ */
     ]
 )
