@@ -27,7 +27,7 @@ let package = Package(
             dependencies: ["CoreShape"]),
         .binaryTarget(
             name: "CoreShape",
-            url: "https://github.com/xho95/CoreShape/releases/download/0.0.1/CoreShape-0.0.1.xcframework.zip",
+            url: "https://github.com/xho95/CoreShape/releases/latest/download/CoreShape-0.0.1.xcframework.zip",
             checksum: "47e86e3bd5edec935b5bb634ef4ff22f7dcb27259b05f6a88bf5aab6ceadc6c7"),
         /*
         .testTarget(
