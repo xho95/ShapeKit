@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CoreShapePackage",
+        "repositoryURL": "https://github.com/xho95/CoreShapePackage.git",
+        "state": {
+          "branch": null,
+          "revision": "69afebc306ca571ae593b77ff2792be92447e104",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

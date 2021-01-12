@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import CoreShape
+import CoreShapePackage
+import CoreShape_iOS
 
 @available(iOS 13.0, *)
 struct SimpleStripe: PatternStyle {
@@ -23,7 +24,7 @@ struct SimpleStripe: PatternStyle {
     var body: some View {
         Group {
             if !configs.isEmpty {
-                StripePrimitive(width: configs.first!.width, spacing: configs.first!.spacing)
+                Stripe(width: configs.first!.width, spacing: configs.first!.spacing)
                     .foregroundColor(configs.first!.color)
             }
         }
@@ -45,7 +46,7 @@ struct SimpleDot: PatternStyle {
     var body: some View {
         Group {
             if !configs.isEmpty {
-                DotPrimitive(width: configs.first!.width, spacing: configs.first!.spacing)
+                Dot(width: configs.first!.width, spacing: configs.first!.spacing)
                     .foregroundColor(configs.first!.color)
             }
         }
@@ -72,7 +73,7 @@ struct SimpleCheck: PatternStyle {
     var body: some View {
         ZStack {
             ForEach(0..<configs.count) { index in
-                StripePrimitive(width: configs[index].width, spacing: configs[index].spacing)
+                Stripe(width: configs[index].width, spacing: configs[index].spacing)
                     .foregroundColor(configs[index].color)
                     .rotationEffect(Angle.degrees(Double(90 * index)))
             }
